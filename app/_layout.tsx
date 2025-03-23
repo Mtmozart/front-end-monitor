@@ -4,6 +4,9 @@ import { Drawer } from 'expo-router/drawer';
 import { Ionicons } from '@expo/vector-icons';
 import { theme } from '../styles/theme';
 import { AuthProvider } from '@/context/Auth/authContext';
+import Toast from 'react-native-toast-message';
+import LoginFormScreen from './Login';
+import { toastConfig } from './config/toast.config';
 
 export default function Layout() {
   return (
@@ -40,6 +43,7 @@ export default function Layout() {
             }}
           />
         </Drawer>
+        <Toast config={toastConfig}/>
       </GestureHandlerRootView>
     </AuthProvider>
   );

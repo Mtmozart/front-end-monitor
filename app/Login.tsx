@@ -1,15 +1,14 @@
-import { Text, View } from "react-native";
+import React from "react";
+import { View } from "react-native";
+import LoginForm from "@/components/forms/LoginForm";
+import styles from "@/constats/styles";
 
-export default function Login() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Login</Text>
+export default function LoginFormScreen() {
+  
+
+   return (
+    <View style={styles.centralizado}>
+      <LoginForm />
     </View>
   );
 }
